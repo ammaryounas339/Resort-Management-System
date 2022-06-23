@@ -1,0 +1,210 @@
+<html>
+
+<head>
+
+
+</head>
+<link rel="stylesheet" href="allStyle.css">
+<link rel="stylesheet" href="bookNow.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="bookNow.js"></script>
+
+<body class="font">
+    <!-- Title -->
+    <div class="header2">
+        <div class='title'>
+            <h2>
+                Greenville Resort
+            </h2>
+        </div>
+
+                <div class="NavBar">
+            <button class="NavSpace">
+            </button>
+            <button class="NavButton" id="current" onclick='window.location.href="Landing.html";'  >
+                Home
+            </button>
+        
+            <button class="NavButton" onclick='window.location.href="Services.html";'>
+                Services
+            </button>
+        
+            <button class="NavButton" onclick='window.location.href="RoomService.html";'>
+                Rooms
+            </button>
+        </div>
+
+        <div class='login' style="display: inline-block;">
+            <button class="login-button" onclick='window.location.href="Login.html";'  id="login">
+                Login
+            </button>
+        </div>
+
+
+    </div>
+
+    <!--form   -->
+
+
+    <div class="mainDiv">
+        <div>
+            <h3>Book Now</h3>
+        </div>
+
+        <form>
+            <div class="Name">
+                <div>
+                    <label for="Name">First Name</label><br>
+                </div>
+                <div class="TextBox">
+                    <input type="text" id="FName" />
+                </div>
+            </div>
+            <div class="Name" style = "padding-top: 2%;">
+                <div>
+                    <label for="Name">Last Name</label><br>
+                </div>
+                <div class="TextBox">
+                    <input type="text" id="LName" />
+                </div>
+            </div>
+            <div class="Label">
+                <div>
+                    Gender
+                </div>
+                <div class="TextBox">
+                    <input type="radio" id="male" name="Gender" value="Male">
+                </div>
+                <div>
+                    <label for="male">Male</label><br>
+                </div>
+                <div class="TextBox">
+                    <input type="radio" id="female" name="Gender" value="Female">
+                </div>
+                <div>
+                    <label for="female">Female</label><br>
+                </div>
+            </div>
+            <div class="Label">
+                <div>
+                    <label for="Email">Email</label><br>
+                </div>
+                <div class="TextBox">
+                    <input type="text" id="Email" />
+                </div>
+             </div>
+    
+            <div class="Label">
+                <div>
+                    <label for="PhoneNo.">Phone No.</label><br>
+                </div>
+                <div class="TextBox">
+                    <input type="text" id="PhoneNo." />
+                </div>
+            </div>
+            <div class="Label">
+                <form>
+                    <div>
+                        <label for="CheckIn">Check-in:</label>
+                    </div>
+                    <div class="TextBox">
+                        <input type="date" id="CheckIn" name="CheckIn">
+                    </div>
+                    <div class="TextBox">
+                        <label for="CheckOut">Check-out:</label>
+                    </div>
+                    <div class="TextBox">
+                        <input type="date" id="CheckOut" name="BookCheckOutTo">
+                    </div>
+
+                    <div class = "ErrorDate" id = "InvalidCheckInDate" style = "display:none">
+                        Invalid Check In Date
+                    </div>
+                    <div class="ErrorDate" id="InvalidCheckOutDate" style="display:none">
+                        Invalid Check Out Date
+                    </div>
+                </form>
+            </div>
+            <div class="Label">
+                Room Type
+                <div class="TextBox">
+                    <input type="radio" id="penthouse" onchange="roomType(4)" name="roomType" value="4">
+                </div>
+                <div>
+                    <label for="penthouse">Penthouse</label><br>
+                </div>
+                <div class="TextBox">
+                    <input type="radio" id="suite" onchange="roomType(3)" name="roomType" value="3">
+                </div>
+                <div >
+                    <label for="suite">Suite</label><br>
+                </div>
+                <div class="TextBox">
+                    <input type="radio" id="luxury" onchange="roomType(1)" name="roomType" value="1">
+                </div>
+                <div>
+                    <label for="luxury">Luxury</label><br>
+                </div>
+                <div class="TextBox">
+                    <input type="radio" id="economy" onchange="roomType(2)" name="roomType" value="2">
+                </div>
+                <div>
+                    <label for="economy">Economy</label><br>
+                </div>
+            </div>
+            <div class="Label">
+                <div>
+                    <label for="RoomQty">Room Quantity</label><br>
+                </div>
+                <div class="TextBox" id = "RoomQuantity">
+                    <select name="RoomQty" id="RoomQty">
+                        <option value="1" id ="Option 1">1</option>
+                        <option value="2" id ="Option 2">2</option>
+                        <option value="3" id ="Option 3">3</option>
+                        <option value="4" id ="Option 4">4</option>
+                        <option value="5" id ="Option 5">5</option>
+                        <option value="6" id ="Option 6">6</option>
+                        <option value="7" id ="Option 7">7</option>
+                        <option value="8" id ="Option 8">8</option>
+                    </select>
+                </div>
+                <div id = "RoomUnavailable" class = "ErrorDate">
+                    Rooms of this type are not currently available
+                </div>
+            </div>
+            <div class="Button">
+                <input type="button" id ="button" onclick="submit()" value="Confirm" style="height: 30px; width: 100px; background-color: salmon;">
+            </div>
+            <div id = "InvalidErrorText" class = "Error" style="display: none;">
+                Please enter valid input in all fields
+            </div>
+            <div id="IncompleteErrorText" class = "Error" style="display: none;">
+                Please enter data in all fields
+            </div>
+        </form>
+    
+       
+    </div>
+
+  
+
+    <footer>
+        <div class="LeftFooter">
+            <div class="info contact">
+                Contact Us
+            </div>
+            <div class="info">
+                Phone Number: 0444545
+            </div>
+            <div class="info">
+                Email Address: sdifnsdo@gmail.com
+            </div>
+        </div>
+
+        
+    </footer>
+    
+
+</body>
+
+</html>

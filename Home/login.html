@@ -1,0 +1,98 @@
+<html>
+
+<head>
+
+
+</head>
+<link rel="stylesheet" href="allStyle.css">
+<link rel="stylesheet" href="loginstyle.css">
+<script src="test.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="login.js"></script>
+<!-- <script src = "require.js"></script> -->
+
+<body class="font">
+    <!-- Title -->
+    <div class="header2">
+        <div class='title'>
+            <h2>
+                Greenville Resort
+            </h2>
+        </div>
+
+        <div class="NavBar">
+            <button class="NavSpace">
+            </button>
+            <button class="NavButton" id="current">
+                Home
+            </button>
+        
+            <button class="NavButton" onclick='window.location.href="BookService.html";'>
+                Services
+            </button>
+        
+            <button class="NavButton" onclick='window.location.href="https://w3docs.com";'>
+                Rooms
+            </button>
+            <button class="NavButton" onclick='window.location.href="https://w3docs.com";'>
+                Book Now
+            </button>
+        </div>
+
+    </div>
+
+    <!--Login   -->
+
+
+    <div class="loginDiv">
+            <div>
+                <h3>Login</h3>
+            </div>
+            <div class="adminClient">
+                <div class="admin">
+                    <input type="radio" id="admin" name="radio" value="Admin" checked = "true">
+                    <label class = "choice" for="admin">Admin</label><br>
+                </div>
+                <div class="client">
+                    <input type="radio" id="client" name="radio" value="Client">
+                    <label class="choice" for="client">Client</label><br>
+                </div>
+            </div>
+            <div class="username">
+                <input type="text" name = "username" id="username" placeholder="Username" style="height:30px;width:250px"/>
+            </div>
+        
+            <div class="pass">
+                <input type="password" name = "password" id = "password" placeholder="Password" style="height:30px;width:250px"/>
+            </div>
+            <div id = "invalid-text">
+                Please enter valid username and password
+            </div>
+            <div>
+                <input type="submit" onclick="submit()"  value="Login" style="height:40px;width:250px"/>
+            </div>
+    </div>
+
+   
+      
+
+    <footer>
+        <div class="LeftFooter">
+            <div class="info contact">
+                Contact Us
+            </div>
+            <div class="info">
+                Phone Number: 0444545
+            </div>
+            <div class="info">
+                Email Address: sdifnsdo@gmail.com
+            </div>
+        </div>
+
+        
+    </footer>
+    </footer>
+
+</body>
+
+</html>

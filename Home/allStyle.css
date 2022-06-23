@@ -1,0 +1,212 @@
+.header2{
+    padding-bottom: 2%;
+    background-color: eee2e2;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 15%;
+}
+
+.title{
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    
+}
+
+.NavBar{
+    overflow: hidden;
+    background-color:#eee2e2;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 65%;
+}
+
+.login-button{
+    color:black;
+    background-color:ivory; /* Green */
+    border-style: solid;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 16px;
+    float: right;
+    border-radius: 50px;
+    border-width: 2px;
+    margin-right: 15%;
+    border-color: black;
+}
+
+.login{
+    width: 10%;
+}
+
+
+body{
+    background-color:white;
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+    /* background-image: url("resort2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;; */
+}
+
+.NavButton{
+    /* float:left; */
+    width: 22%;
+    background-color:#eee2e2;
+    border-style: solid;
+    border-color: black;
+    border-top: 0;
+    border-bottom: 0;
+    border-left:0; 
+    border-right: 0 ;
+    /* border-radius:300px; */
+    /* margin-left:2%; */
+    text-align: center;
+    padding: 10px;
+    font-size: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.NavButton:hover{
+    cursor: pointer;
+    font-size: 140%;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+.NavSpace{
+    width:2%;
+    background-color: eee2e2;
+    border-style: hidden;
+    /* border-style: solid;
+    border-color: black;
+    border-top: 0;
+    border-bottom: 0;
+    border-left:0; 
+    border-right: 100% ; */
+}
+
+footer{
+    background-color:darksalmon;
+    padding: 3%;
+    display: flex;
+    align-items: left;
+}
+
+.info{
+    text-align: left;
+    font-size: 120%;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.contact{
+    font-size: 140%;
+    padding-bottom: 2.5%;
+    font-variant: small-caps;
+}
+.loginDiv{
+    text-align: center;
+    display: block;
+    width: 20%;
+    margin: 5%;
+    margin-left: 35%;
+    padding: 3%;
+    border: 5px solid pink;
+    border-radius: 10px;
+    
+    }
+
+.adminClient{
+    padding: 15px;
+    display: block;
+    margin-left: 15%;
+    display:flex;
+    flex-direction: row; 
+    text-align: center;
+    
+}
+
+.admin{
+    display: block;
+    margin-right: 5%;
+    padding-bottom: 10px;
+}
+
+.username{
+    padding-bottom: 12px;
+}
+.pass{
+    padding-bottom: 15px;
+}
+
+
+/* .loginDiv input[type="radio"]{
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.loginDiv label{
+    display: inline-block;
+    background-color: white;
+    padding: 4%;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.loginDiv input[type="radio"]:checked + label {
+    background-color: rgb(157, 243, 214);
+} */
+
+
+.admin:hover{
+    cursor: pointer;
+    color:darksalmon ;
+    text-decoration: underline;
+}
+
+.client:hover{
+    cursor: pointer;
+    color: darksalmon;
+    text-decoration: underline;
+}
+
+#client:checked +label{
+    color: darksalmon;
+    text-decoration: underline;
+}
+
+#admin:checked +label{
+    color: darksalmon;
+    text-decoration: underline;
+}
+
+.font{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.admin,.client{
+    padding-right: 15%;
+}
+
+.choice:hover{
+    cursor: pointer;
+}

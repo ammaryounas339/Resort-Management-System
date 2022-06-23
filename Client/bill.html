@@ -1,0 +1,222 @@
+<html>
+
+<head>
+
+
+</head>
+<link rel="stylesheet" href="allStyle.css">
+<link rel="stylesheet" href="bill.css">
+<!-- <script src="test.js"></script> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<!-- <script src="login.js"></script> -->
+
+<!-- <script src = "require.js"></script> -->
+
+<body class="font">
+    <!-- Title -->
+    <div class="header2">
+        <div class='title'>
+            <h2>
+                Greenville Resort
+            </h2>
+        </div>
+
+        <div class="NavBar">
+            <button class="NavSpace">
+            </button>
+            <button class="NavButton" id="current">
+                Home
+            </button>
+        
+            <button class="NavButton" onclick='window.location.href="BookService.html";'>
+                Services
+            </button>
+        
+            <button class="NavButton" onclick='window.location.href="https://w3docs.com";'>
+                Rooms
+            </button>
+            <button class="NavButton" onclick='window.location.href="https://w3docs.com";'>
+                Book Now
+            </button>
+        </div>
+
+    </div>
+
+
+        <!--Confirm Checkout-->
+    <div class="ConfirmCheckout" id="checkout">
+        <div class="ConfirmCheckoutHeader">
+            <h3>Are you sure you want to checkout?</h3>
+        </div>
+        <div class="ConfirmButtons">
+            <div class="ConfirmYes">
+                <input type="button" id="ConfirmButtons" value="Yes" style="width: 75px;" onclick="displayBill()"/>
+            </div>
+            <div class="ConfirmNo">
+                <input type="button" id="ConfirmButtons" value="No" style="width: 75px;" onclick="window.location.href='client_home.html'"/>
+            </div>
+        </div>
+    </div>
+
+    <!--Bill Details  -->
+
+    <div class = "Bill" style = "display: none;" id="Bill">
+        <div class = "Weclome">
+            <h2>Thank You for Staying!</h2>
+        </div>
+    
+        <div class = "Bill-Body">
+            <div class = "BillHeader">
+                <h3>Billing Info</h3>
+            </div>
+            <div class = "BillBody">
+                <div class = "Receipt">
+                    <div class = "ReceiptHeader">
+                        <h4>Receipt</h4>
+                    </div>
+                    <div class = "ReceiptData">
+                        <div class = "LeftData">
+                            <div>
+                                Bill No:
+                            </div>
+                            <div>
+                                Check In Date:
+                            </div>
+                            <div>
+                                Check Out Date:
+                            </div>
+                            <div>
+                                Name:
+                            </div>
+                            <div>
+                                Amount:
+                            </div>
+                        </div>
+                        <div class = "RightData">
+                            <div id="BillNo">
+                                Bill No
+                            </div>
+                            <div id = "CheckInDate">
+                                Check In Date
+                            </div>
+                            <div id = "CheckOutDate">
+                                Check Out Date
+                            </div>
+                            <div id="BillName">
+                                Name
+                            </div>
+                            <div id="BillAmount">
+                                Amount
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "Details">
+                    <div class = "DetailsHeader">
+                        <h4>Details</h4>
+                    </div>
+                    <div class = "DetailsData">
+                        <div class = "LeftData">
+                            <div>
+                                Rooms Booked:
+                            </div>
+                            <div>
+                                Room No:
+                            </div>
+                            <div>
+                                Room Type:
+                            </div>
+                            <div>
+                                Per Room Price: 
+                            </div>
+                        </div>
+                        <div class = "RightData">
+                            <div id="RoomsBooked">
+                                Rooms Booked
+                            </div>
+                            <div id="RoomNo">
+                                Room No
+                            </div>
+                            <div id="RoomType">
+                                Room Type
+                            </div>
+                            <div id="RoomPrice">
+                                Per Room Price 
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class = "Amount">
+                <div class = "AmountHeader">
+                    <h4>Amount Details</h4>
+                </div>
+                <div class = "AmountData">
+                    <div class = "LeftData">
+                        <div>
+                            Accomodation:
+                        </div>
+                        <div>
+                            Food:
+                        </div>
+                        <div>
+                            Tennis:
+                        </div>
+                        <div>
+                            Bowling: 
+                        </div>
+                        <div>
+                            Movies:
+                        </div>
+                    </div>
+                    <div class = "RightData">
+                        <div id="Accomodation">
+                            Accomodation
+                        </div>
+                        <div id="Food">
+                            Food
+                        </div>
+                        <div id="Tennis">
+                            Tennis
+                        </div>
+                        <div id="Bowling">
+                            Bowling 
+                        </div>
+                        <div id="Movies">
+                            Movies
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <div class="ReviewButton">
+        <input type="button" id="LeaveReview" value="Leave a Review!" style="width: 200p;" onclick="window.location.href='Review.html'"/>
+    </div>
+</div>
+            
+
+   
+      
+
+    
+
+</body>
+    <script src="bill.js"></script>
+<footer>
+    <div class="LeftFooter">
+        <div class="info contact">
+            Contact Us
+        </div>
+        <div class="info">
+            Phone Number: 0444545
+        </div>
+        <div class="info">
+            Email Address: sdifnsdo@gmail.com
+        </div>
+    </div>
+
+    
+</footer>
+
+</html>

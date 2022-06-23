@@ -1,0 +1,14 @@
+
+input[type='radio'] {
+    -webkit-appearance:none;
+}
+
+#invalid-text{
+    font-size:80%;
+    padding-bottom: 4%;
+    padding-top: 1.5%;
+    color:red;
+    font-family: Arial, Helvetica, sans-serif;
+    display:none;
+}
+

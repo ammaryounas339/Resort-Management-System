@@ -1,0 +1,251 @@
+.header2{
+    padding-bottom: 2%;
+    background-color: eee2e2;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 15%;
+}
+
+.title{
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    
+}
+
+.NavBar{
+    overflow: hidden;
+    background-color:#eee2e2;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 65%;
+}
+
+.login-button{
+    color:black;
+    background-color:ivory; /* Green */
+    border-style: solid;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 16px;
+    float: right;
+    border-radius: 50px;
+    border-width: 2px;
+    margin-right: 15%;
+    border-color: black;
+}
+
+.login{
+    width: 10%;
+}
+
+
+body{
+    background-color:white;
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+    /* background-image: url("resort2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;; */
+}
+
+.NavButton{
+    /* float:left; */
+    width: 22%;
+    background-color:#eee2e2;
+    border-style: solid;
+    border-color: black;
+    border-top: 0;
+    border-bottom: 0;
+    border-left:0; 
+    border-right: 0 ;
+    /* border-radius:300px; */
+    /* margin-left:2%; */
+    text-align: center;
+    padding: 10px;
+    font-size: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.NavButton:hover{
+    cursor: pointer;
+    font-size: 140%;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+.NavSpace{
+    width:2%;
+    background-color: eee2e2;
+    border-style: hidden;
+    /* border-style: solid;
+    border-color: black;
+    border-top: 0;
+    border-bottom: 0;
+    border-left:0; 
+    border-right: 100% ; */
+}
+
+footer{
+    background-color:darksalmon;
+    padding: 3%;
+    display: flex;
+    align-items: left;
+}
+
+.info{
+    text-align: left;
+    font-size: 120%;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.contact{
+    font-size: 140%;
+    padding-bottom: 2.5%;
+    font-variant: small-caps;
+}
+
+.font{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ReceiptData{
+    display: flex;
+    flex-direction: row;
+    margin-left: 21%;
+    width:20%;
+    border: 2px solid black;
+}
+
+.DetailsData{
+    display: flex;
+    flex-direction: row;
+    margin-left: 21%;
+    width:20%;
+    border: 2px solid black;
+}
+
+.AmountData{
+    display: flex;
+    flex-direction: row;
+    margin-left: 21%;
+    width:20%;
+    border: 2px solid black;
+}
+
+.BillHeader{
+    text-align: center;
+}
+.ReceiptHeader{
+    width:50%;
+    margin-left: 22%;
+}
+
+.Weclome{
+    text-align: center;
+}
+
+.Bill{
+    margin-bottom: 3%; 
+    
+}
+
+.DetailsHeader{
+    width:50%;
+    margin-left: 22%;
+}
+
+.AmountHeader{
+    width:50%;
+    margin-left: 22%;
+}
+
+.DetailsData{
+    display: flex;
+    flex-direction: row;
+    margin-left: 21%;
+}
+
+.AmountData{
+    display: flex;
+    flex-direction: row;
+    margin-left: 21%;
+}
+
+.LeftData{
+    width: 55%;
+}
+
+.RightData{
+    width: 65%;
+    border-left: 2px solid black;
+    padding-left: 2%;
+    text-align: center;
+}
+
+.ReviewButton{
+    margin-left: 46%;
+    margin-top: 2%;
+}
+
+#LeaveReview{
+    padding: 8px;
+    background-color: coral;
+    border-radius: 20px;
+}
+
+#LeaveReview:hover{
+    cursor: pointer;
+    background-color: rgb(252, 157, 122);
+    /* font-weight: 600; */
+    transition: 0.1s;   
+}
+
+.ConfirmCheckoutHeader{
+    text-align: center;
+    padding: 2%;
+}
+
+.ConfirmButtons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 42%;
+}
+
+.ConfirmNo{
+    margin-left: 7%;
+    width: 10%;
+    text-align: center;
+
+}
+.ConfirmYes{
+    width: 10%;
+    text-align: center;
+
+}
+
+.ConfirmCheckout{
+    
+    margin-top: 6%;
+    margin-bottom: 8.2%
+    
+}
+#ConfirmButtons:hover{
+    cursor: pointer;
+    background-color: coral;
+}

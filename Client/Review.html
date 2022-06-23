@@ -1,0 +1,126 @@
+<html>
+
+<head>
+
+
+</head>
+<link rel="stylesheet" href="ReviewStyles.css">
+<link rel="stylesheet" href="client_header_styles.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="Review.js"></script>
+
+<body>
+    <!-- Title -->
+    <div class="header2">
+        <div class='title'>
+            <h2>
+                Greenville Resort
+            </h2>
+        </div>
+
+        <div class="NavBar">
+            <button class="NavSpace">
+            </button>
+            <button class="NavButton" onclick='window.location.href="client_home.html";'>
+                Home
+            </button>
+
+            <button class="NavButton"onclick='window.location.href="BookService.html";'>
+                Book Services
+            </button>
+
+            <button class="NavButton" onclick='window.location.href="https://w3docs.com";'>
+                Checkout
+            </button>
+        </div>
+
+        <div class='login' style="display: inline-block;">
+            <button class="login-button" id="login">
+                Log Out
+            </button>
+        </div>
+    </div>
+
+    <!-- Nav   -->
+
+
+    <div id = "Goodbye">
+        <div class="Goodbye">Thank you for staying with us<br>Please visit again soon<br><br><div class = "Redirect">Redirecting back to home page...</div></div>
+    </div>
+    <div id = "Review" >
+        <div class="ReviewIntro-Outer">
+            <div class="ReviewIntro">
+                Please leave a review of your stay
+            </div>
+        </div>
+
+        <div class = "form-outer">
+            <div class = "form">
+                <div class = "rating-stars">
+                    <div class = "rating-title" >
+                        Rating:
+                    </div>
+                    <div class="rate">
+                        <input type="radio" id="star5" name="star" value="5"/>
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="star" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="star" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="star" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="star" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                </div>
+
+                <div class = "Comments-Title">
+                    Comments
+                </div>
+                <div class = "Comments-Area">
+                    <textarea id="comments"  rows = "15"  cols="120" placeholder="Leave a comment"></textarea>
+                </div>
+
+                <div class = "Submit-Div">
+                    <button type = "submit" class= "Submit" onclick="submit_data()" >Submit</button>
+                </div>
+
+                <div id="Error-Text" style="display: none;">
+                    Please enter data in all fields
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="LeftFooter">
+            <div class="info contact">
+                Contact Us
+            </div>
+            <div class="info">
+                Phone Number: 0444545
+            </div>
+            <div class="info">
+                Email Address: sdifnsdo@gmail.com
+            </div>
+        </div>
+
+        <!-- <div class = "RightFooter">
+                <div class = "Socials">
+                    Twitter
+                </div>
+                <div class = "Socials">
+                    Facebook
+                </div>
+                <div class = "Socials">
+                    Insta
+                </div>
+            </div> -->
+    </footer>
+    </footer>
+
+</body>
+
+</html>

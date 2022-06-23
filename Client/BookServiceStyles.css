@@ -1,0 +1,159 @@
+
+
+.ServicesIntro-Outer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height:20%;
+    background-color:lavenderblush;
+}
+.Booked{
+    float:right;
+    color: rgb(253, 136, 90);
+    font-size: 120%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ServicesIntro{
+    font-size: 250%;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    margin-left: 30%;
+}
+
+/* .Tennis{
+    background-image: url(img/tennis.jpg);
+    background-size: cover;
+} */
+
+
+
+
+
+
+
+
+
+.Service-Outer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height:60%;
+    background-color:white;
+    margin-top: 2%;
+    /* background-image: url("img/resort2.jpg");
+    background-size: 100% 100%; */
+}
+
+
+.Service{
+    color:black;
+    display: flex;
+    flex-direction:column ;
+    align-items: left;
+    height:80%;
+    width:65%;
+    /* border: 2%;
+    border-style: solid;
+    border-color: black; */
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.Service-Head{
+    width: 40%;
+    height: 25%;
+
+}
+
+.Service-Title{
+    font-size: 250%;
+    font-variant: small-caps;
+    font-style: italic;
+    font-family:Luminari, fantasy;
+    font-weight: 10;
+}
+
+.Service-Body{
+    width:100%;
+    height: 80%;
+    /* border: 2%;
+    border-style: solid;
+    border-color: black; */
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    
+}
+
+.Detail{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
+    padding-left:15%
+    /* border: 2%;
+    border-style: solid;
+    border-color: black; */
+}
+
+.Price{
+    padding-top: 5%;
+}
+
+
+.Detail-Heading{
+    /* text-align: left; */
+    font-size: 140%;
+    font-variant:normal;
+    font-style:normal;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    font-weight: 100;
+    margin-right: 3%;
+
+
+    /* border: 2%;
+    border-style: solid;
+    border-color: black; */
+    /* margin-right:5%; */
+}
+
+.Detail-Info{
+    font-size: 140%;
+    font-variant:normal;
+    font-style:normal;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    font-weight: 10;
+    padding-right: 5%;
+    /* border: 2%;
+    border-style: solid;
+    border-color: black; */
+}
+
+
+.Booking{
+    width:20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.BookingButton{
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-weight: 600;
+    padding: 5%;
+    background-color: #ebb8b8;
+    border-style: hidden;
+    border-radius: 100px;
+}
+
+.BookingButton:hover{
+    cursor: pointer;
+    background-color: #f19797;
+    transition: 0.3s;
+}
+
+
+
+

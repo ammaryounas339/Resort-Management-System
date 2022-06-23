@@ -1,0 +1,156 @@
+<html>
+
+<head>
+
+
+</head>
+<link rel="stylesheet" href="ClientHomeStyles.css">
+<link rel="stylesheet" href="client_header_styles.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="../logout.js"></script>
+
+
+<body>
+    <!-- Title -->
+    <div class="header2">
+        <div class='title' id='title'>
+            <h2>
+                Greenville Resort
+            </h2>
+        </div>
+
+        <div class="NavBar">
+            <button class="NavSpace">
+            </button>
+            <button class="NavButton" id="current">
+                Home
+            </button>
+        
+            <button class="NavButton" onclick='window.location.href="BookService.html";'>
+                Book Services
+            </button>
+        
+            <button class="NavButton" onclick='window.location.href="bill.html";'>
+                Checkout
+            </button>
+        </div>
+
+        <div class='login' style="display: inline-block;">
+            <button class="login-button" id="login" onclick="logout()">
+                Log Out
+            </button>
+        </div>
+    </div>
+
+    <!-- Nav   -->
+
+
+    <div class="Welcome-Outer">
+        <div class="Welcome">
+            <div class="Title-Box">
+                <div class="welcome-title">
+                    Welcome <br> <span id = "ClientName">Abdullah Gohar</span>
+                </div>
+            </div>
+            <div class="Body-Box">
+                <div class="body-text welcome-body">
+                    Hope you enjoy your stay at The Greenville Resort<br>
+                    Feel free to explore the grounds, use one of our many services and have an adventerous time
+                </div>
+                <div class="Welcome-Space">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Details-Outer">
+        <div class="Details">
+            <div class="Details-Head">
+                <div class="Details-Title">
+                    Your Details
+                </div>
+            </div>
+
+            <div class="Details-Body">
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        Rooms Allotted:
+                    </div>
+                    <div class="Detail-Info" id="Rooms">
+                        465, 789, 950
+                    </div>
+                </div>
+
+                <!-- <div class="Detail">
+                    <div class="Detail-Heading" id="Rooms">
+                        Rooms Allotted:
+                    </div>
+                    <div class="Detail-Info" id="Rooms">
+                        465, 789, 950
+                    </div>
+                </div> -->
+
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        Services Ordered:
+                    </div>
+                    <div class="Detail-Info" id="Services">
+                        465, 789, 950
+                    </div>
+                </div>
+
+
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        Booking Start Date:
+                    </div>
+                    <div class="Detail-Info" id="Booking-Start">
+                        23-01-2022
+                    </div>
+                </div>
+
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        Booking End Date:
+                    </div>
+                    <div class="Detail-Info" id="Booking-End">
+                        30-01-2022
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="LeftFooter">
+            <div class="info contact">
+                Contact Us
+            </div>
+            <div class="info">
+                Phone Number: 0444545
+            </div>
+            <div class="info">
+                Email Address: sdifnsdo@gmail.com
+            </div>
+        </div>
+
+        <!-- <div class = "RightFooter">
+                <div class = "Socials">
+                    Twitter
+                </div>
+                <div class = "Socials">
+                    Facebook
+                </div>
+                <div class = "Socials">
+                    Insta
+                </div>
+            </div> -->
+    </footer>
+    </footer>
+
+</body>
+
+<script src="client_home.js"></script>
+
+</html>

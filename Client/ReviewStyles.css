@@ -1,0 +1,156 @@
+.ReviewIntro-Outer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height:20%;
+    background-color:lavenderblush;
+}
+
+.ReviewIntro{
+    font-size: 200%;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    margin-left: 35%;
+}
+
+.form-outer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 65%;
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+.form{
+    height: 80%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.rating-stars{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+.rating-title{
+    font-size: 160%;
+    font-variant:normal;
+    font-style:normal;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    font-weight: 100;
+    margin-right: 5%;
+    margin-top: 1.2%;
+}
+
+.comments-title{
+    font-size: 160%;
+    font-variant:normal;
+    font-style:normal;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    font-weight: 100;
+    margin-right: 5%;
+    margin-top: 1.2%;
+}
+
+textarea {
+  width: 100%;
+  height: 50%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 20px;
+  resize: none;
+}
+
+.Submit-Div{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+.Submit{
+    margin-left: 45%;
+    padding: 1%;
+    font-size: 140%;
+    background-color: aliceblue;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    left:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:45px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.Submit:hover{
+    cursor: pointer;
+    background-color: rgb(201, 226, 248);
+    transition: 0.3s;
+}
+
+#Error-Text{
+    display: none;
+    color: red;
+    padding-top: 2%;
+    padding-left: 35%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    margin-right: 9%;
+    margin-bottom: 20%;
+}
+
+#Goodbye{
+    display: none;
+    align-items: center;
+    width: 100%;
+    height:60%;
+    background-color:lavenderblush;
+}
+
+.Goodbye{
+    font-size: 200%;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    margin-left: 35%;
+}
+
+.Redirect{
+    margin-top: 20%;
+    font-size: 80%;
+    font-style: italic;
+    font-weight: 500;
+}

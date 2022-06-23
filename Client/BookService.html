@@ -1,0 +1,292 @@
+<html>
+
+<head>
+
+
+</head>
+<link rel="stylesheet" href="BookServiceStyles.css">
+<link rel="stylesheet" href="client_header_styles.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="../logout.js"></script>
+
+
+<body>
+    <!-- Title -->
+    <div class="header2">
+        <div class='title'>
+            <h2>
+                Greenville Resort
+            </h2>
+        </div>
+
+        <div class="NavBar">
+            <button class="NavSpace">
+            </button>
+            <button class="NavButton" onclick='window.location.href="client_home.html";'>
+                Home
+            </button>
+
+            <button class="NavButton" id="current">
+                Book Services
+            </button>
+
+            <button class="NavButton" onclick='window.location.href="bill.html";'>
+                Checkout
+            </button>
+        </div>
+
+        <div class='login' style="display: inline-block;">
+            <button class="login-button" onclick = "logout()" id="login">
+                Log Out
+            </button>
+        </div>
+    </div>
+
+    <!-- Nav   -->
+
+
+    <div class = "ServicesIntro-Outer">
+        <div class = "ServicesIntro">
+            The following services are available
+        </div>
+    </div>
+
+    <div class="Service-Outer">
+        <div class="Service Tennis">
+            <div class="Service-Head">
+                <div class="Service-Title">
+                    Tennis
+                </div>
+            </div>
+
+            <div class="Service-Body">
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        Play Tennis at one of our marvelous outdoor grass courts fully equipped with original Wilson rackets
+                    </div>
+                </div>
+
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        The choice between four different courts is available as well as coaching lessons by internationally renowned players
+                    </div>
+                </div>
+
+
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        Pay once and enjoy for your entire stay!
+                    </div>
+                </div>
+
+                <div class="Detail Price">
+                    <div class="Detail-Heading">
+                        Price:
+                    </div>
+                    <div class="Detail-Info">
+                        $59.99
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class = "Booking" id="TennisBookButton">
+            <button class = "BookingButton" onclick="bookService(1)">Book Now</button>
+        </div>
+        <div class = "Booked" id="TennisBooked" style="display: none;"> 
+            This Service Has Been Booked
+        </div>
+    </div>
+
+
+    <!-- Bowling -->
+    <div class="Service-Outer" style = "background-color: lavenderblush;">
+        <div class="Service">
+            <div class="Service-Head">
+                <div class="Service-Title">
+                    Bowling
+                </div>
+            </div>
+    
+            <div class="Service-Body">
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        Go bowling with your friends and family right in the comfort of our luxurious resort
+                    </div>
+                </div>
+    
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        Play on state of the art bowling alleys with 12 different lanes open 24/7 to all reserved guests
+                    </div>
+                </div>
+    
+    
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        Pay once and enjoy for your entire stay!
+                    </div>
+                </div>
+    
+                <div class="Detail Price">
+                    <div class="Detail-Heading">
+                        Price:
+                    </div>
+                    <div class="Detail-Info">
+                        $39.99
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="Booking" id="BowlingBookButton">
+            <button class="BookingButton" onclick="bookService(2)">Book Now</button>
+        </div>
+        <div class = "Booked" id="BowlingBooked" style="display: none;"> 
+            This Service Has Been Booked
+        </div>
+    </div>
+
+
+    <!-- Movies -->
+    <div class="Service-Outer">
+        <div class="Service">
+            <div class="Service-Head">
+                <div class="Service-Title">
+                    Cinema
+                </div>
+            </div>
+    
+            <div class="Service-Body">
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        Had a enough of nature for a day? Have a true cinematic experience in our resort's own movie theater 
+                    </div>
+                </div>
+    
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        Playing only the best and the latest movies complete with 3D visuals, surround sound and super-comfortable reclining seats
+                    </div>
+                </div>
+    
+    
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        Pay once and enjoy for your entire stay!
+                    </div>
+                </div>
+    
+                <div class="Detail Price">
+                    <div class="Detail-Heading">
+                        Price:
+                    </div>
+                    <div class="Detail-Info">
+                        $19.99
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="Booking" id="MovieBookButton">
+            <button class="BookingButton" onclick="bookService(3)">Book Now</button>
+        </div>
+        <div class = "Booked" id="MovieBooked" style="display: none;"> 
+            This Service Has Been Booked
+        </div>
+    </div>
+
+
+    <!-- Food -->
+    <div class="Service-Outer" style = "background-color: lavenderblush;">
+        <div class="Service">
+            <div class="Service-Head">
+                <div class="Service-Title">
+                    Food
+                </div>
+            </div>
+    
+            <div class="Service-Body">
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        What better to complement the natural vistas surrounding Greenville than most wonderous food enjoyed with a view
+                    </div>
+                </div>
+    
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        Choose between a variety of meals from cuisines across the globe, prepared by master chefs and served at
+                        our baeutiful dining halls overlooking the lake
+                    </div>
+                </div>
+    
+    
+                <div class="Detail">
+                    <div class="Detail-Heading">
+                        Pay once and enjoy for your entire stay!
+                    </div>
+                </div>
+
+    
+                <div class="Detail Price">
+                    <div class="Detail-Heading">
+                        Price:
+                    </div>
+                    <div class="Detail-Info">
+                        $49.99
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="Booking" id="FoodBookButton" style="display: flex; flex-direction:column; align-items:center; margin-top:15%">
+            <button class="BookingButton" onclick="bookFood()" >Book Now</button>
+            <div style="margin-top: 5%;">
+                <label for="quantity">Number of People:</label>
+                <input type="number" id="quantity" name="quantity"  value = "0">
+            </div>
+            <div id="People-Error" style="color:red; font-size:80%; text-align:center; display:none; margin-top:2%">
+                Please enter correct number of people
+            </div>
+        </div>
+        <div class = "Booked" id="FoodBooked" style="display: none;"> 
+            This Service Has Been Booked
+        </div>
+    </div>
+
+    <footer>
+        <div class="LeftFooter">
+            <div class="info contact">
+                Contact Us
+            </div>
+            <div class="info">
+                Phone Number: 0444545
+            </div>
+            <div class="info">
+                Email Address: sdifnsdo@gmail.com
+            </div>
+        </div>
+
+        <!-- <div class = "RightFooter">
+                <div class = "Socials">
+                    Twitter
+                </div>
+                <div class = "Socials">
+                    Facebook
+                </div>
+                <div class = "Socials">
+                    Insta
+                </div>
+            </div> -->
+    </footer>
+    </footer>
+
+</body>
+
+<script src = "bookService.js"></script>
+
+</html>
