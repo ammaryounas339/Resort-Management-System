@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Nunito:ital,wght@1,300&display=swap');
+.navbar{
+    background-color:#eee2e2;
+    border-radius :30px;
+}
+.navbar ul{
+overflow:auto;
+}
+.navbar li{
+text-align: center;
+float:left;
+list-style: none;
+margin:13px 20px;
+
+}
+.navbar li a{
+padding:3px;
+}
+.navbar li a:hover{
+    cursor: pointer;
+    text-shadow: 2px 2px 8px #4a898b
+}
+
+
+a,.fancybox,.button,.dropdown-content a,.stats,.logout,span,.tableheader,.tablecell,.searchlabel{
+font-family: 'Be Vietnam Pro', sans-serif;
+text-decoration: none;
+color:cadetblue;
+}
+
+
+
+.stats{
+   text-align: center;
+   font-style: italic;
+   margin-bottom:25px;
+}
+.fancybox{
+    color:black;
+    background-color:rgb(238, 226, 226);
+    border-color: cadetblue;
+    border-style: double;
+    border-radius: 5px;
+    border-width: 2px;
+    margin-right: 2%;
+    padding: 1%;
+    text-align: center;
+    font-size: 25px;
+    width:50%;
+    margin:auto;
+    margin-bottom:25px;
+}
+.fancybox:hover{
+    width:60%;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px #4a898b;
+}
+
+button{
+    font-size:16px;
+    background-color: rgb(238, 226, 226);
+     border-color: cadetblue;
+    border-style: double;
+    border-radius: 5px;
+    border-width: 2px;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 2px 2px 8px #4a898b;
+} 
+ 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: rgb(238, 226, 226);
+    }
+
+.show {
+      display:block;
+    }
+ul{
+    list-style: none;
+
+}
+.btngroup li{
+text-align: center;
+float:left;
+width:25%;
+margin:auto;
+
+}
+.logout{
+    float:right;
+}
+footer{
+    background-color:darksalmon;
+    padding: 3%;
+    display: flex;
+    align-items: left;
+}
+
+.info{
+    text-align: left;
+    font-size: 120%;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.contact{
+    font-size: 140%;
+    padding-bottom: 2.5%;
+    font-variant: small-caps;
+}
+#table-decoration{
+    width:100%;
+}
+.tableheader{
+    width:220px;
+    font:120%;
+    text-align:center;
+    background-color:rgb(238, 226, 226)
+}
+
+.button{
+    display:grid;
+    margin:auto;
+    margin-bottom: 20px;
+}
+.tablerows{
+    border: 1px solid cadetblue;
+}
+.tablecell{
+    color:black;
+    border:1px solid cadetblue ;
+    background-color: antiquewhite;
+    text-align:center;
+    padding : 1%;
+}
+.inputstyle{
+    width:25%;
+    border: 1px solid cadetblue;
+    background-color: antiquewhite;
+}
+#myChart{
+    margin:auto;
+    margin-bottom:20px;
+}
+  
